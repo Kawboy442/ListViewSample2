@@ -9,6 +9,7 @@ import androidx.fragment.app.DialogFragment
 
 class OrderConfirmDialogFragment: DialogFragment() {
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
+
         val builder = AlertDialog.Builder(activity)
 
         builder.setTitle(R.string.dialog_title)
@@ -24,6 +25,7 @@ class OrderConfirmDialogFragment: DialogFragment() {
 
     private inner class DialogButtonClickListener: DialogInterface.OnClickListener {
         override fun onClick(dialog: DialogInterface?, which: Int) {
+
             var msg = ""
 
             when(which) {

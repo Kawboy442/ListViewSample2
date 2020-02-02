@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
 
     private inner class ListItemClickListener: AdapterView.OnItemClickListener {
         override fun onItemClick(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+
             val dialogFragment = OrderConfirmDialogFragment()
             dialogFragment.show(supportFragmentManager, "OrderConfirmDialogFragment")
         }
